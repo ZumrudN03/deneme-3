@@ -1,0 +1,29 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 80%;
+    margin: 50px auto;
+    .card{
+        width: 150px;
+        height: 50px;
+        border: 1px solid black;
+        padding: 10px;
+       &_text{
+        display: flex;
+        justify-content: space-between;
+       }
+       &_icon{
+        display: flex;
+        justify-content: space-between;
+        p{
+            color: red;
+            cursor: pointer;
+            transition: 300ms;
+            &:hover{
+                color: blue;
+            }
+        }
+       }
+    }
+}
